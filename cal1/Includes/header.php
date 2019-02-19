@@ -23,13 +23,13 @@
      <nav class="navbar navbar-dark bg-info secondary-color mb-3">
           <a href=".\index.php" class="navbar-brand">Calendrier</a>
           <form class="nav-item">
-              <button id="btnnotif" type="button" class="btn btn-warning">Test notification</button>
+              <button id="btnnotif" type="button" class="btn btn-dark">Test notification</button>
           </form>
           <form class="nav_item" method="post" action="../src/Remplir.php" id="remplir">
                <button class="btn btn-dark" type="submit" form="remplir" >Temporaire : Remplir la bdd</button>
           </form>
           <form method="post" action="../src/Vider.php" id="vider">
-              <button class="btn btn-success" type="submit" form="vider" >Temporaire : Vider la bdd</button>
+              <button class="btn btn-dark" type="submit" form="vider" >Temporaire : Vider la bdd</button>
           </form>
       </nav>
 
