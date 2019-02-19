@@ -28,3 +28,7 @@
 .calendar__othermonth .calendar__day {
   opacity: 0.3;
 }
+
+.calendar__othermonth{
+  background-color: rgba(0, 0, 0, 0.2);
+}
