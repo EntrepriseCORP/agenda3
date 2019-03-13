@@ -13,8 +13,7 @@ function dd(...$vars) {
 
   //fonction connection a la bbd
 function get_pdo (): PDO {
-    return new PDO('mysql:host=localhost;dbname=calendrier', 'root', '', [
-    ]);
+    return new PDO('mysql:host=localhost;dbname=calendrier', 'root', '', []);
 }
 
 
