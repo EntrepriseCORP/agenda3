@@ -15,6 +15,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
       <link rel="stylesheet" href=".\css\calendar.css">
+      <link rel="stylesheet" href=".\css\event.css">
 </head>
 
 

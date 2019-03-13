@@ -13,18 +13,21 @@ if (!isset($_GET['id'])) {
 $event = $events->find($_GET['id']);
 ?>
 
-<h1><?= hentities($event['name']); ?></h1>
-
-
+<div class="Event">
+  <h1 class="EventTitle"><?= hentities($event['name']); ?></h1>
   <!--utiliser la fonction hentities pour empecher les injections SQL-->
-    Date : <?= hentities((new DateTime($event['start']))->format('d/m/Y')); ?><br>
-    <!--utiliser la fonction hentities pour empecher les injections SQL-->
-    Début : <?= hentities((new DateTime($event['start']))->format('H:i')); ?><br>
-    <!--utiliser la fonction hentities pour empecher les injections SQL-->
-    Fin : <?= hentities((new DateTime($event['end']))->format('H:i')); ?><br>
-    <!--utiliser la fonction hentities pour empecher les injections SQL-->
-    Description : <?= hentities($event['description']); ?>
+  <div class="EventContent">
+    <span class="EventContentSpan">Date : <?= hentities((new DateTime($event['start']))->format('d/m/Y')); ?></span>
 
+    <!--utiliser la fonction hentities pour empecher les injections SQL-->
+    <span class="EventContentSpan">Début : <?= hentities((new DateTime($event['start']))->format('H:i')); ?></span>
 
+    <!--utiliser la fonction hentities pour empecher les injections SQL-->
+    <span class="EventContentSpan">Fin : <?= hentities((new DateTime($event['end']))->format('H:i')); ?></span>
+
+    <!--utiliser la fonction hentities pour empecher les injections SQL-->
+    <span class="EventContentSpan">Description : <?= hentities($event['description']); ?></span>
+  </div>
+</div>
 
 <?php require '../Includes/footer.php'; ?>
